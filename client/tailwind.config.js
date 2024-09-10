@@ -4,9 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Open Sans", "sans-serif"],
+        sans: ["OpenSans-SemiBold", "sans-serif"],
       },
-      
     },
   },
   plugins: [],

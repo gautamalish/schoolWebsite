@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .menu {
-  @apply absolute top-20 left-40 text-white text-xl tracking-widest hover:cursor-pointer font-sans font-semibold before:absolute before:bg-white before:w-full before:h-0.5 before:bottom-0 hover:before:-translate-x-[100%] after:absolute after:bg-white after:w-full after:h-0.5 after:bottom-0 hover:after:-translate-x-[100%] overflow-hidden;
+  @apply absolute top-20 left-40 text-white p-1 text-xl tracking-[0.2rem] hover:cursor-pointer font-sans font-semibold before:absolute before:bg-white before:w-full before:h-[1px] before:bottom-0 hover:before:-translate-x-[100%] after:absolute after:bg-white after:w-full after:h-[1px] after:bottom-0 hover:after:-translate-x-[100%] overflow-hidden;
 
   &::after {
     transition: all 0.4s ease-in-out 0.1s;
@@ -23,7 +23,7 @@
 }
 
 .admission {
-  @apply absolute top-20 right-40 text-white text-xl tracking-widest hover:cursor-pointer font-sans font-semibold before:absolute before:bg-white before:w-full before:h-0.5 before:bottom-0 hover:before:-translate-x-[100%] after:absolute after:bg-white after:w-full after:h-0.5 after:bottom-0 hover:after:-translate-x-[100%] overflow-hidden;
+  @apply absolute top-20 right-40 text-white text-xl p-1 tracking-[0.2rem] hover:cursor-pointer font-sans font-semibold before:absolute before:bg-white before:w-full before:h-[1px] before:bottom-0 hover:before:-translate-x-[100%] after:absolute after:bg-white after:w-full after:h-[1px] after:bottom-0 hover:after:-translate-x-[100%] overflow-hidden;
 
   &::after {
     transition: all 0.4s ease-in-out 0.1s;
