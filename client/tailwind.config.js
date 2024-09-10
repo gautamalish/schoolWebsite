@@ -4,7 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["OpenSans-SemiBold", "sans-serif"],
+        sans: ["Open Sans", "sans-serif"],
+        raleway: ["Raleway"],
+        comfortaa: ["Comfortaa"],
       },
     },
   },
