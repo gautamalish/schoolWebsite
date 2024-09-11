@@ -1,8 +1,37 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import BearVideo from "../../assets/videos/Bear_video.mp4";
 import bkvmLogo from "../../assets/pics/bkvm_logo.png";
 import AboutIntro from "./AboutIntro";
 const Home = () => {
+  const [currentSection, setCurrentSection] = useState(0);
+  const sections = [
+    {
+      title: "MIND",
+      content:
+        "A solid academic foundation that fosters independent thinking and innovation.",
+    },
+    {
+      title: "BODY",
+      content:
+        "Athletic opportunities to enhance physical abilities and foster teamwork.",
+    },
+    {
+      title: "SPIRIT",
+      content:
+        "Inspiring students to pursue a higher mission and lead a purpose-driven life.",
+    },
+    {
+      title: "CHARACTER",
+      content:
+        "Fostering integrity and encouraging one another to uphold the highest standards.",
+    },
+  ];
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSection((prev) => (prev + 1) % sections.length);
+    }, 10000);
+    return () => clearInterval(interval);
+  }, [sections.length]);
   return (
     <main className="scroll-smooth">
       <section className="relative">
@@ -72,6 +101,17 @@ const Home = () => {
                 <p className="text-gray-300 font-sans text-xl leading-8 text-center">
                   Fostering integrity and encouraging one another to uphold the
                   highest standards.
+                </p>
+              </div>
+            </div>
+            {/* for smaller screen */}
+            <div className="md:hidden absolute left-1/2 -translate-x-1/2 bottom-5 w-[80%]">
+              <div className="flex flex-col justify-center items-center gap-3">
+                <p className="text-white font-comfortaa tracking-[0.2rem] text-xl">
+                  {sections[currentSection].title}
+                </p>
+                <p className="text-gray-300 font-sans text-xl leading-8 text-center">
+                  {sections[currentSection].content}
                 </p>
               </div>
             </div>
