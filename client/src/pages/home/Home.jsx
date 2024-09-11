@@ -40,7 +40,7 @@ const Home = () => {
           autoPlay
           loop
           muted
-          className="w-full h-[120vh] object-cover relative"
+          className="w-full h-[120vh] object-cover relative max-sm:h-[100vh]"
         ></video>
         <div className="absolute top-0 w-full h-full bg-[rgba(0,0,0,0.5)]"></div>
         <div className="flex flex-col">
@@ -54,7 +54,7 @@ const Home = () => {
             <p className="admission">ADMISSION</p>
           </div>
           <div className="w-full items-center gap-10">
-            <div className="absolute top-[30%] left-1/2 -translate-x-1/2 flex flex-col w-full justify-center items-center gap-10">
+            <div className="absolute top-[30%] left-1/2 max-sm:top-[20%] -translate-x-1/2 flex flex-col w-full justify-center items-center gap-10">
               <p className="text-white text-2xl text-center font-normal tracking-[0.2rem]">
                 BAL KALYAN VIDYA MANDIR
               </p>
@@ -64,7 +64,7 @@ const Home = () => {
               <button className="bg-red-700 text-white py-5 px-7 tracking-[0.2rem] font-sans font-normal text-xl">
                 LEARN MORE
               </button>
-              <div className="w-[80%] bg-gray-400 h-[1px] mt-40"></div>
+              <div className="w-[80%] bg-gray-400 h-[1px] max-sm:mt-[5vh] mt-[20vh]"></div>
             </div>
             <div className="flex gap-10 w-[80%] absolute left-1/2 -translate-x-1/2 bottom-5 max-md:hidden">
               <div className="flex flex-col justify-center items-center flex-1 gap-3">
